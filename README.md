@@ -1,25 +1,113 @@
-# LampX
+# LampX — Full-Stack Authentication System
 
-A starter full-stack authentication app using React + Vite, Express, MongoDB, bcrypt password hashing, JWT in an HTTP-only cookie, Helmet, CORS and rate limiting.
+A full-stack authentication application built with React, Node.js, Express.js, and MongoDB.
 
-## Requirements
-- Node.js and npm
-- MongoDB running locally, or a MongoDB connection string
+## About the Project
 
-## Setup
-1. Extract this ZIP.
-2. Open a terminal in the folder containing `package.json`.
-3. Run `npm install`.
-4. Copy `.env.example` to `.env`.
-5. Set a long random `JWT_SECRET` in `.env`.
-6. Make sure MongoDB is running.
-7. Run `npm run dev`.
-8. Open http://localhost:5173
+LampX is a web development project focused on understanding and implementing authentication through a frontend and backend architecture.
 
-The API runs at http://localhost:5000.
+The project demonstrates how different technologies work together to handle user authentication and database operations.
 
-## Important
-- Never commit `.env`.
-- Use a strong, unique JWT secret.
-- For production, configure HTTPS, a production database, and appropriate cookie/CORS settings.
-- This is a learning starter, not a production security audit.
+## Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend |
+| Vite | Development server and build tool |
+| Node.js | JavaScript runtime |
+| Express.js | Backend framework |
+| MongoDB | Database |
+| Mongoose | Database modeling |
+| JWT | Token-based authentication |
+| bcryptjs | Password hashing |
+
+## Project Structure
+
+```text
+LampX/
+├── backend/
+│   ├── controllers/
+│   │   └── authController.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── models/
+│   │   └── User.js
+│   ├── routes/
+│   │   └── authRoutes.js
+│   └── server.js
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── style.css
+├── .env.example
+├── .gitignore
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Arqumjamal/LampX.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd LampX
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment variables
+
+Create your `.env` file using `.env.example` as a reference.
+
+Add your own configuration values. Never publish real secrets.
+
+### 5. Start the application
+
+```bash
+npm run dev
+```
+
+Frontend: http://localhost:5173/
+
+Backend: http://localhost:5000/
+
+## Learning Objectives
+
+- Full-stack application architecture
+- Frontend and backend communication
+- REST API development
+- Authentication concepts
+- Database integration
+- Password security
+- Backend middleware
+
+## Future Improvements
+
+- Expand authentication features
+- Improve input validation
+- Add automated testing
+- Improve error handling
+- Prepare for production deployment
+
+## Author
+
+**Arqum Jamal**
+
+Software Engineering Student | Full-Stack Developer
+
+GitHub: https://github.com/Arqumjamal
+
+---
+
+This project is part of my continuous learning journey in software engineering and full-stack development.
