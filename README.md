@@ -111,3 +111,8 @@ GitHub: https://github.com/Arqumjamal
 ---
 
 This project is part of my continuous learning journey in software engineering and full-stack development.
+## Screenshots
+
+### LampX Homepage
+
+![LampX Homepage](screenshots/lampx-homepage.png)
